@@ -73,7 +73,7 @@ const pokemonList = {
 
 const history = createMemoryHistory()
 
-describe('<PokemonPage />', () => {
+describe('<PokemonPage/>', () => {
   beforeEach(() => {
     history.push('/pokemon/eevee')
   })
