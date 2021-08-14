@@ -28,3 +28,13 @@ jobs:
         run: npm run eslint
       - name: build
         run: npm run build
+      - uses: adyasha9/full-stack-open-pokedex@master
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "murmuring-temple-51209"
+          heroku_email: "adyasham918@gmail.com"
+          procfile: "web: npm start"
+          appdir: "test"
+          env_file: ".env"
+         
+    
